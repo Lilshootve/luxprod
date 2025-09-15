@@ -240,30 +240,74 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- TESTIMONIALS SLIDER -->
   <section id="testimonials" class="container">
     <h2 class="section-title">Testimonials</h2>
-    <div class="quotes" style="margin-top:18px; grid-template-columns: 1fr 1fr;">
-      <blockquote class="quote">“Lux Productions turned our corporate event into an unforgettable experience. Every detail was flawless.”<br><small>— Michael Anderson, Los Angeles, CA</small></blockquote>
-      <blockquote class="quote">“The lighting and sound design were world-class. Our wedding felt like a dream.”<br><small>— Emily Carter, San Diego, CA</small></blockquote>
-      <blockquote class="quote">“Professional, creative, and reliable. They exceeded every expectation we had.”<br><small>— Jonathan Miller, Miami, FL</small></blockquote>
-      <blockquote class="quote">“From planning to execution, Lux Productions handled everything with elegance and precision.”<br><small>— Sophia Ramirez, Dallas, TX</small></blockquote>
-      <blockquote class="quote">“Our concert was elevated by their stunning stage design and audiovisual production.”<br><small>— David Thompson, Las Vegas, NV</small></blockquote>
-      <blockquote class="quote">“We couldn’t believe how seamless the entire process was. Absolute professionals.”<br><small>— Olivia Martinez, Houston, TX</small></blockquote>
-      <blockquote class="quote">“Lux Productions made our gala look like something out of a movie. Spectacular work.”<br><small>— Christopher Lee, New York, NY</small></blockquote>
-      <blockquote class="quote">“They don’t just organize events, they create experiences that people remember forever.”<br><small>— Isabella Johnson, Chicago, IL</small></blockquote>
-      <blockquote class="quote">“Attention to detail, cutting-edge technology, and a team that truly cares.”<br><small>— Matthew Wilson, Orlando, FL</small></blockquote>
-      <blockquote class="quote">“Our company launch wouldn’t have been the same without their vision and expertise.”<br><small>— Grace Mitchell, Phoenix, AZ</small></blockquote>
-      <blockquote class="quote">“Lux Productions transformed our venue into something magical. Guests are still talking about it.”<br><small>— Ethan Davis, San Francisco, CA</small></blockquote>
-      <blockquote class="quote">“The team anticipated our needs before we even mentioned them. That’s true professionalism.”<br><small>— Sophia Hernandez, San Antonio, TX</small></blockquote>
-      <blockquote class="quote">“Creative, innovative, and elegant — they know how to bring an idea to life.”<br><small>— Daniel Roberts, Denver, CO</small></blockquote>
-      <blockquote class="quote">“We trusted Lux Productions with our most important day, and they delivered perfection.”<br><small>— Ava Gonzalez, Atlanta, GA</small></blockquote>
-      <blockquote class="quote">“The audiovisual quality was outstanding, better than anything we’ve experienced before.”<br><small>— Liam Walker, Seattle, WA</small></blockquote>
-      <blockquote class="quote">“Their staff is friendly, responsive, and incredibly skilled. Highly recommended.”<br><small>— Charlotte Perez, Austin, TX</small></blockquote>
-      <blockquote class="quote">“The stage lighting created the exact atmosphere we wanted. It was breathtaking.”<br><small>— James White, Sacramento, CA</small></blockquote>
-      <blockquote class="quote">“They managed every challenge with grace and efficiency. True experts.”<br><small>— Amelia Torres, Portland, OR</small></blockquote>
-      <blockquote class="quote">“Lux Productions brought glamour and sophistication to our event.”<br><small>— Benjamin Scott, Boston, MA</small></blockquote>
-      <blockquote class="quote">“If you want your event to feel premium and unforgettable, this is the team to call.”<br><small>— Mia Flores, Washington, DC</small></blockquote>
+    <div class="testimonial-slider" style="margin-top:18px; position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.08); border-radius: var(--radius);">
+      <div class="slides" style="display:flex; transition: transform .5s ease; will-change: transform;">
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Lux Productions turned our corporate event into an unforgettable experience. Every detail was flawless.”<br><small>— Michael Anderson, Los Angeles, CA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“The lighting and sound design were world-class. Our wedding felt like a dream.”<br><small>— Emily Carter, San Diego, CA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Professional, creative, and reliable. They exceeded every expectation we had.”<br><small>— Jonathan Miller, Miami, FL</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“From planning to execution, Lux Productions handled everything with elegance and precision.”<br><small>— Sophia Ramirez, Dallas, TX</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Our concert was elevated by their stunning stage design and audiovisual production.”<br><small>— David Thompson, Las Vegas, NV</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“We couldn’t believe how seamless the entire process was. Absolute professionals.”<br><small>— Olivia Martinez, Houston, TX</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Lux Productions made our gala look like something out of a movie. Spectacular work.”<br><small>— Christopher Lee, New York, NY</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“They don’t just organize events, they create experiences that people remember forever.”<br><small>— Isabella Johnson, Chicago, IL</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Attention to detail, cutting-edge technology, and a team that truly cares.”<br><small>— Matthew Wilson, Orlando, FL</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Our company launch wouldn’t have been the same without their vision and expertise.”<br><small>— Grace Mitchell, Phoenix, AZ</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Lux Productions transformed our venue into something magical. Guests are still talking about it.”<br><small>— Ethan Davis, San Francisco, CA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“The team anticipated our needs before we even mentioned them. That’s true professionalism.”<br><small>— Sophia Hernandez, San Antonio, TX</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Creative, innovative, and elegant — they know how to bring an idea to life.”<br><small>— Daniel Roberts, Denver, CO</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“We trusted Lux Productions with our most important day, and they delivered perfection.”<br><small>— Ava Gonzalez, Atlanta, GA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“The audiovisual quality was outstanding, better than anything we’ve experienced before.”<br><small>— Liam Walker, Seattle, WA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Their staff is friendly, responsive, and incredibly skilled. Highly recommended.”<br><small>— Charlotte Perez, Austin, TX</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“The stage lighting created the exact atmosphere we wanted. It was breathtaking.”<br><small>— James White, Sacramento, CA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“They managed every challenge with grace and efficiency. True experts.”<br><small>— Amelia Torres, Portland, OR</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“Lux Productions brought glamour and sophistication to our event.”<br><small>— Benjamin Scott, Boston, MA</small></blockquote>
+        </div>
+        <div class="slide" style="min-width:100%; padding:24px;">
+          <blockquote class="quote">“If you want your event to feel premium and unforgettable, this is the team to call.”<br><small>— Mia Flores, Washington, DC</small></blockquote>
+        </div>
+      </div>
+      <button class="btn" id="prevTest" aria-label="Previous testimonial" style="position:absolute; left:10px; top:50%; transform:translateY(-50%);">‹</button>
+      <button class="btn" id="nextTest" aria-label="Next testimonial" style="position:absolute; right:10px; top:50%; transform:translateY(-50%);">›</button>
     </div>
   </section>
 
@@ -339,18 +383,7 @@
     </div>
   </footer>
 
-  <!-- BACKGROUND THEMES -->
-  <section id="themes" class="container" style="background: transparent;">
-    <h2 class="section-title">Background themes</h2>
-    <p class="muted">Try five hero background options and pick your favorite.</p>
-    <div class="cards" style="margin-top:18px;">
-      <article class="card"><h3>Elegant Dark</h3><p>Default muted overlay on photography.</p><button class="btn" onclick="applyHeroBackground(0)">Apply</button></article>
-      <article class="card"><h3>Navy Gradients</h3><p>Soft gradients with subtle light bloom.</p><button class="btn" onclick="applyHeroBackground(1)">Apply</button></article>
-      <article class="card"><h3>Gold Accent</h3><p>Golden tint blended with imagery.</p><button class="btn" onclick="applyHeroBackground(2)">Apply</button></article>
-      <article class="card"><h3>Deep Blue</h3><p>Clean two-tone dark blue gradient.</p><button class="btn" onclick="applyHeroBackground(3)">Apply</button></article>
-      <article class="card"><h3>Light Wash</h3><p>Softer overlay for brighter mood.</p><button class="btn" onclick="applyHeroBackground(4)">Apply</button></article>
-    </div>
-  </section>
+  
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -399,18 +432,29 @@
       form.reset();
     });
 
-    // Background selector demo
-    const bgOptions = [
-      'linear-gradient(180deg, rgba(0,0,0,.3), rgba(0,0,0,.5)), url(assets/hero-placeholder.jpg) center/cover no-repeat',
-      'linear-gradient(180deg, rgba(10,26,47,.6), rgba(10,26,47,.8)), radial-gradient(900px 400px at -10% 10%, rgba(255,255,255,.06), transparent 60%), #0A1A2F',
-      'linear-gradient(120deg, rgba(212,175,55,.25), rgba(10,26,47,.85)), url(assets/hero-placeholder.jpg) center/cover no-repeat',
-      'linear-gradient(160deg, #0c1b33, #152d52)',
-      'linear-gradient(180deg, rgba(255,255,255,.05), rgba(10,26,47,1))'
-    ];
-    function applyHeroBackground(index){
-      const hero = document.querySelector('.hero');
-      if (hero) hero.style.background = bgOptions[index] || bgOptions[0];
+    // Testimonials slider
+    const slider = document.querySelector('.testimonial-slider .slides');
+    const slides = document.querySelectorAll('.testimonial-slider .slide');
+    const prevBtn = document.getElementById('prevTest');
+    const nextBtn = document.getElementById('nextTest');
+    let idx = 0;
+    let autoplay;
+
+    function goTo(i){
+      idx = (i + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${idx * 100}%)`;
     }
+    function startAutoplay(){
+      stopAutoplay();
+      autoplay = setInterval(() => goTo(idx + 1), 5000);
+    }
+    function stopAutoplay(){ if (autoplay) clearInterval(autoplay); }
+
+    prevBtn?.addEventListener('click', () => { goTo(idx - 1); startAutoplay(); });
+    nextBtn?.addEventListener('click', () => { goTo(idx + 1); startAutoplay(); });
+    slider?.addEventListener('mouseenter', stopAutoplay);
+    slider?.addEventListener('mouseleave', startAutoplay);
+    startAutoplay();
 
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -22,20 +22,22 @@
   <style>
     :root {
       --navy: #123054;
+      --navy-900: #0b1430;
+      --blue-700: #1d4474;
       --gold: #D4AF37;
       --gold-soft: #E0C76A;
-      --gray: #C0C0C0;
+      --gray: #5B6B82;
       --gray-700: #6E7891;
       --white: #FFFFFF;
       --black: #0b0b0d;
       --radius: 14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --shadow: 0 10px 30px rgba(0,0,0,.12);
     }
 
     /* Reset & base */
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--white); background: linear-gradient(180deg, #142f55, #1d4474); }
+    body { margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--navy-900); background: #FFFFFF; }
     img { max-width: 100%; height: auto; display: block; }
     a { color: inherit; text-decoration: none; }
 
@@ -44,13 +46,13 @@
     .grid { display: grid; gap: 28px; }
 
     /* Top bar (como City Experiences) */
-    .topbar { background: #0d223f; color: var(--gray); font-size:.9rem; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .topbar { background: #F7F9FC; color: var(--navy-900); font-size:.9rem; border-bottom: 1px solid #E6EAF2; }
     .topbar-inner { display:flex; align-items:center; justify-content: space-between; padding: 8px 0; gap:12px; }
     .topbar a { color: var(--gray); }
     .contact-inline { display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
 
     /* Navbar */
-    .navbar { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(10,26,47,0.6); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .navbar { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(255,255,255,0.9); border-bottom: 1px solid #E6EAF2; }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
     .brand { display:flex; align-items:center; gap:14px; }
     .brand .wordmark { display:none; }
@@ -59,27 +61,27 @@
 
     .nav-links { display:flex; align-items:center; gap: 22px; }
     .nav-links a { opacity:.9; font-weight:600; }
-    .cta-btn { padding: 10px 16px; border-radius: 999px; background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy); font-weight: 700; border: none; }
+    .cta-btn { padding: 10px 16px; border-radius: 999px; background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy-900); font-weight: 700; border: none; }
 
     /* Mobile menu */
-    .burger { display:none; width:40px; height:40px; border:1px solid rgba(255,255,255,.2); border-radius:10px; background:transparent; color:var(--white); }
+    .burger { display:none; width:40px; height:40px; border:1px solid #D6D9E3; border-radius:10px; background:transparent; color:var(--navy-900); }
 
     @media (max-width: 980px) {
       .nav-links { display: none; }
       .burger { display: grid; place-items:center; }
-      .nav-drawer { position: fixed; inset: 110px 16px auto 16px; background: rgba(10,26,47,.98); border: 1px solid rgba(255,255,255,.1); border-radius: 16px; padding: 18px; display: none; box-shadow: var(--shadow); }
-      .nav-drawer a { display:block; padding:12px 6px; border-bottom:1px dashed rgba(255,255,255,.08); }
+      .nav-drawer { position: fixed; inset: 110px 16px auto 16px; background: #FFFFFF; border: 1px solid #E6EAF2; border-radius: 16px; padding: 18px; display: none; box-shadow: var(--shadow); }
+      .nav-drawer a { display:block; padding:12px 6px; border-bottom:1px dashed #E6EAF2; color: var(--navy-900); }
       .nav-drawer a:last-child { border-bottom: none; }
       .nav-drawer.open { display:block; }
     }
 
     /* Hero estilo City Experiences (alto + imagen) */
-    .hero { position: relative; overflow: hidden; padding: 110px 0 90px; background: linear-gradient(180deg, rgba(255,255,255,.1), rgba(0,0,0,.35)), url('assets/hero-placeholder.jpg') center/cover no-repeat; }
+    .hero { position: relative; overflow: hidden; padding: 110px 0 90px; background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.6)), url('assets/hero-placeholder.jpg') center/cover no-repeat; }
     .kicker { color: var(--gray); text-transform: uppercase; letter-spacing:.25em; font-weight:600; font-size:.85rem; }
     .hero h1 { font-family: Cinzel, serif; font-size: clamp(2.2rem, 5vw, 4.2rem); line-height: 1.05; margin: 6px 0 8px; }
-    .hero p { color: #EAF0FF; max-width: 62ch; font-size: 1.06rem; }
+    .hero p { color: #334155; max-width: 62ch; font-size: 1.06rem; }
     .hero-cta { display:flex; gap:12px; margin-top: 18px; flex-wrap: wrap; }
-    .btn { padding: 12px 18px; border-radius: 999px; border:1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: var(--white); font-weight:700; }
+    .btn { padding: 12px 18px; border-radius: 999px; border:1px solid #D6D9E3; background: #FFFFFF; color: var(--navy-900); font-weight:700; }
     .btn.primary { background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy); border: none; }
 
     /* Barra de cotización rápida (inspirada en buscador City) */
@@ -90,25 +92,25 @@
     @media (max-width: 960px){ .quickbar form { grid-template-columns: 1fr 1fr; } }
 
     /* Sections */
-    section { padding: 80px 0; background: linear-gradient(180deg, #173a67, #214c82); }
+    section { padding: 80px 0; background: #FFFFFF; }
     .section-title { font-family: Cinzel, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 18px; }
     .muted { color: var(--gray); }
 
     /* Cards y demás estilos existentes se mantienen */
     .cards { display:grid; grid-template-columns: repeat(12, 1fr); gap:20px; }
-    .card { grid-column: span 4; background: rgba(255,255,255,.02); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 22px; transition: transform .25s ease, background .25s ease; }
-    .card:hover { transform: translateY(-4px); background: rgba(255,255,255,.04); }
-    .card h3 { margin: 6px 0 8px; font-size: 1.12rem; }
-    .card p { color: #E6ECFF; font-size:.98rem; }
+    .card { grid-column: span 4; background: #F8FAFC; border:1px solid #E6EAF2; border-radius: var(--radius); padding: 22px; transition: transform .25s ease, background .25s ease; }
+    .card:hover { transform: translateY(-4px); background: #FFFFFF; }
+    .card h3 { margin: 6px 0 8px; font-size: 1.12rem; color: var(--navy-900); }
+    .card p { color: #374151; font-size: .98rem; }
     .icon { width: 36px; height:36px; border-radius: 8px; display:grid; place-items:center; background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy); font-weight:900; }
 
     /* Portfolio */
     .portfolio-grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
-    .shot { grid-column: span 4; border-radius: 16px; overflow:hidden; position: relative; border:1px solid rgba(255,255,255,.08); background: #0F213D; }
-    .shot > div { aspect-ratio: 16/10; background: linear-gradient(135deg, #132646, #0b1426); display:grid; place-items:center; color: var(--gray); font-weight:700; letter-spacing:.18em; text-transform: uppercase; }
+    .shot { grid-column: span 4; border-radius: 16px; overflow:hidden; position: relative; border:1px solid #E6EAF2; background: #F1F5FB; }
+    .shot > div { aspect-ratio: 16/10; background: linear-gradient(135deg, #f3f6fb, #e8eef8); display:grid; place-items:center; color: #5B6B82; font-weight:700; letter-spacing:.18em; text-transform: uppercase; }
 
     /* Footer */
-    footer { padding: 40px 0 64px; color: var(--gray); border-top: 1px solid rgba(255,255,255,.06); }
+    footer { padding: 40px 0 64px; color: #5B6B82; border-top: 1px solid #E6EAF2; background: #FFFFFF; }
     .footer-grid { display:grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 18px; }
     .badge { display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,.12); padding: 10px 12px; border-radius: 999px; font-weight:700; }
     .separator { height:1px; background: rgba(255,255,255,.08); margin: 18px 0; }
@@ -404,7 +406,7 @@
   </script>
   
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/19514550183" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed; right:18px; bottom:18px; z-index:70; display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border-radius:999px; background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy); box-shadow: var(--shadow); font-size:24px; text-decoration:none;">
+  <a href="https://wa.me/19514550183" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed; right:18px; bottom:18px; z-index:70; display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border-radius:999px; background: linear-gradient(145deg, var(--gold), #b99025); color: var(--navy-900); box-shadow: var(--shadow); font-size:24px; text-decoration:none;">
     ✆
   </a>
 

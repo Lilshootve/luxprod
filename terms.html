@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Conditions — LUX PRODUCTIONS</title>
+  <meta name="description" content="Terms & Conditions for LUX PRODUCTIONS." />
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy-900:#0b1430; --text:#0b1430; --muted:#5B6B82; --line:#E6EAF2; }
+    body { margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--text); background:#fff; }
+    .container { width: min(900px, 92vw); margin: 0 auto; padding: 28px 0 80px; }
+    header { position: sticky; top:0; background:#fff; border-bottom:1px solid var(--line); z-index:10; }
+    .nav { display:flex; align-items:center; justify-content: space-between; padding: 12px 0; }
+    .brand { display:flex; align-items:center; gap:12px; color: var(--navy-900); text-decoration:none; font-weight:700; }
+    .brand img { height:40px; width:auto; display:block; }
+    main h1 { font-family: Cinzel, serif; font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 22px 0 6px; }
+    .muted { color: var(--muted); }
+    h2 { font-size: 1.2rem; margin: 22px 0 8px; }
+    p, li { line-height: 1.7; }
+    section { border:1px solid var(--line); border-radius:12px; padding: 18px; margin: 18px 0; background:#F8FAFC; }
+    a { color: var(--navy-900); text-decoration: underline; }
+    footer { margin-top: 40px; color: var(--muted); border-top:1px solid var(--line); padding-top: 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="/assets/luxlogo.png" alt="LUX" />
+        <span>LUX PRODUCTIONS</span>
+      </a>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Terms & Conditions</h1>
+    <p class="muted">Last updated: <span id="updated"></span></p>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>These Terms & Conditions (the “Terms”) govern your use of the website and services provided by LUX PRODUCTIONS (“we”, “us”, or “our”). By accessing or using our site, you agree to be bound by these Terms.</p>
+    </section>
+
+    <section>
+      <h2>2. Services</h2>
+      <p>We provide event planning and production services. Any proposal, scope, timeline, and pricing will be specified in a written agreement or order form. In case of conflict, such agreement prevails over these Terms.</p>
+    </section>
+
+    <section>
+      <h2>3. Bookings, Payments, and Cancellations</h2>
+      <ul>
+        <li>Bookings are confirmed upon signed agreement and initial payment.</li>
+        <li>Payment schedules and methods are set out in the proposal or invoice.</li>
+        <li>Cancellations and rescheduling may incur fees to cover committed costs.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Client Responsibilities</h2>
+      <ul>
+        <li>Provide timely approvals, access to venues, and required permits.</li>
+        <li>Ensure compliance with venue rules, safety, and local regulations.</li>
+        <li>Designate a single point of contact empowered to make decisions on-site.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Intellectual Property</h2>
+      <p>Unless otherwise agreed in writing, creative materials, stage designs, and audiovisual assets produced by us remain our intellectual property. Client is granted a limited license for the agreed purpose.</p>
+    </section>
+
+    <section>
+      <h2>6. Liability and Insurance</h2>
+      <p>We carry standard business insurance. To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages. Our total liability is limited to the amounts paid for the relevant services.</p>
+    </section>
+
+    <section>
+      <h2>7. Force Majeure</h2>
+      <p>Neither party is liable for delays or failures due to causes beyond reasonable control, including but not limited to extreme weather, strikes, power failures, or government actions.</p>
+    </section>
+
+    <section>
+      <h2>8. Governing Law</h2>
+      <p>These Terms are governed by the laws of the State of California, without regard to conflict-of-law principles. Venue for disputes will be the courts located in Riverside County, CA.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>Questions about these Terms: <a href="mailto:info@luxprodusa.com">info@luxprodusa.com</a> · <a href="tel:+19514550183">+1 (951) 455-0183</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> LUX PRODUCTIONS. All rights reserved.
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toISOString().split('T')[0];
+  </script>
+</body>
+</html>
+
+

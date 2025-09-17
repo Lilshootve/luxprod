@@ -83,6 +83,9 @@
       .nav-drawer a { display:block; padding:12px 6px; border-bottom:1px dashed #E6EAF2; color: var(--navy-900); font-size: 1.1rem; }
       .nav-drawer a:last-child { border-bottom: none; }
       .nav-drawer.open { display:block; }
+      /* Servicios: 2 columnas en móvil/tablet angosto */
+      #services .cards { grid-template-columns: repeat(2, 1fr) !important; gap: 12px; }
+      #services .card { grid-column: span 1 !important; }
     }
 
     /* Mobile Hero Optimization */

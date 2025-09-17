@@ -119,8 +119,10 @@
     }
 
     @media (max-width: 640px) {
-      .cards { grid-template-columns: 1fr; }
-      .card { grid-column: span 1; }
+      .cards { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .card { grid-column: span 1; padding: 14px; }
+      .card h3 { font-size: 1.05rem; }
+      .card p { font-size: 0.95rem; line-height: 1.5; }
       .portfolio-grid { grid-template-columns: 1fr; }
       .shot { grid-column: span 1; }
       .container { padding: 0 16px; }
@@ -141,13 +143,13 @@
 
     /* Mobile Testimonials */
     @media (max-width: 768px) {
-      .testimonial-slider { margin: 0 -16px; }
+      .testimonial-slider { margin: 0 -16px; background: #F8FAFC; border-color: #E6EAF2; }
       .testimonial-slider .slides { padding: 0 16px; }
-      .slide { padding: 20px 16px; }
-      .slide blockquote { font-size: 1rem; line-height: 1.5; }
-      .slide .author { font-size: 0.9rem; }
-      .testimonial-controls { margin-top: 20px; }
-      .testimonial-controls button { padding: 8px 12px; font-size: 0.9rem; }
+      .slide { padding: 24px 18px; }
+      .slide blockquote { font-size: 1.1rem; line-height: 1.6; text-align: center; max-width: 60ch; margin: 0 auto; }
+      .slide .author { font-size: 0.95rem; display: inline-block; margin-top: 8px; color: #6E7891; }
+      .testimonial-controls { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
+      .testimonial-controls button, #prevTest, #nextTest { padding: 10px 14px; font-size: 1rem; border-radius: 10px; }
     }
 
     /* Mobile Contact Form */
@@ -244,8 +246,9 @@
 
     <nav class="nav-links" aria-label="Primary sections">
       <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
       <a href="#testimonials">Testimonials</a>
+      <a href="#showreel">Video</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
       <a class="cta-btn" href="#contact">Request a quote</a>
     </nav>
@@ -253,8 +256,9 @@
   </div>
   <div class="container nav-drawer" id="drawer" aria-hidden="true">
     <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
     <a href="#testimonials">Testimonials</a>
+    <a href="#showreel">Video</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
     <a class="cta-btn" href="#contact">Request a quote</a>
   </div>
@@ -334,14 +338,6 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio" class="container">
-    <h2 class="section-title">Portfolio</h2>
-    <p class="muted">Our recent work will be showcased here soon.</p>
-    <div class="portfolio-grid" style="margin-top:18px;">
-    </div>
-  </section>
-
   <!-- TESTIMONIALS SLIDER -->
   <section id="testimonials" class="container">
     <h2 class="section-title">Testimonials</h2>
@@ -410,6 +406,25 @@
       </div>
       <button class="btn" id="prevTest" aria-label="Previous testimonial" style="position:absolute; left:10px; top:50%; transform:translateY(-50%);">‹</button>
       <button class="btn" id="nextTest" aria-label="Next testimonial" style="position:absolute; right:10px; top:50%; transform:translateY(-50%);">›</button>
+    </div>
+  </section>
+
+  <!-- SHOWREEL VIDEO -->
+  <section id="showreel" class="container">
+    <h2 class="section-title">Showreel</h2>
+    <div style="margin-top:16px; border-radius:16px; overflow:hidden; border:1px solid #E6EAF2; box-shadow: var(--shadow); background:#000;">
+      <video controls playsinline preload="metadata" style="width:100%; height:auto; display:block;">
+        <source src="assets/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="container">
+    <h2 class="section-title">Portfolio</h2>
+    <p class="muted">Our recent work will be showcased here soon.</p>
+    <div class="portfolio-grid" style="margin-top:18px;">
     </div>
   </section>
 
